@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use DB;
+
 
 class ProductSeeder extends Seeder
 {
@@ -38,14 +40,14 @@ class ProductSeeder extends Seeder
             'qty' => 3,
             'category_id' => 3
         ]);
-        DB::table('produto')->insert([
-            'nome_produto' => 'Cerveja Colorado Ribeirao Larger',
+        DB::table('product')->insert([
+            'name' => 'Cerveja Colorado Ribeirao Larger',
             'price' => 10.90,
             'qty' => 3,
             'category_id' => 4
         ]);
-        DB::table('produto')->insert([
-            'nome_produto' => 'Cerveja Colorado Appia Larger',
+        DB::table('product')->insert([
+            'name' => 'Cerveja Colorado Appia Larger',
             'price' => 12.90,
             'qty' => 3,
             'category_id' => 4
