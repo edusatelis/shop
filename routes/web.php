@@ -10,6 +10,6 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/products', [ProductController::class, 'index']);
 
-Route::get('/categories', [CategoryController::class, 'index']);
-Route::get('/categories/create', [CategoryController::class, 'create']);
+Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/category/create', [CategoryController::class, 'create']);
 

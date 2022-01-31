@@ -1,0 +1,153 @@
+// General
+
+* {
+    font-family: 'Roboto';
+}
+
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.row{
+    margin: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+
+// Navbar
+
+#navbar a{
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover{
+    color: #f2a340;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+// search
+
+#search-container{
+    background-image: url('/img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#search-container h1{
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+// Products
+
+#products-container{
+    padding: 50px;
+}
+
+#products-container h2{
+    margin-bottom: 10px;
+}
+
+#products-container .subtitle{
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#cards-container{
+    display: flex;
+}
+
+#products-container .card{
+   flex: 1 1 0;
+   max-width: 50%;
+   border-radius: 10px;
+   padding: 0;
+   margin: 5px;
+}
+
+#cards-container{
+    margin-top: 50px;
+}
+
+#cards-container img{
+    max-height: 270px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-price{
+    font-size: 14px;
+    color: #212121;
+}
+
+.card .card-title{
+    font-size: 20px;
+    color: #212121;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+// Footer
+
+footer{
+    text-align: center;
+    background-color: #353e48 !important;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+#category img{
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+}
+
+#category h5{
+    text-align: center;
+    margin-top: 15px;
+}
