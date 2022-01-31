@@ -4,6 +4,13 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use Database\Seeders\CategorySeeder;
+use Database\Seeders\ProductSeeder;
+use Database\Seeders\ProductDescriptionSeeder;
+use Database\Seeders\ProductImageSeeder;
+use Database\Seeders\ProductSpecialPriceSeeder;
+
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -14,5 +21,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        $this->call(CategorySeeder::class);
+        $this->call(ProductSeeder::class);
+        $this->call(ProductDescriptionSeeder::class);
+        $this->call(ProductImageSeeder::class);
+        $this->call(ProductSpecialPriceSeeder::class);
     }
 }

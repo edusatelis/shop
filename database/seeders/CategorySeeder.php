@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use DB;
 
 class CategorySeeder extends Seeder
 {
@@ -19,6 +20,7 @@ class CategorySeeder extends Seeder
 
         DB::table('category')->insert([
             'name' => 'Erva Mate',
+
         ]);
 
         DB::table('category')->insert([
