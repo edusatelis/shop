@@ -14,27 +14,27 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('category')->insert([
+        DB::table('categories')->insert([
             'name' => 'Cafés',
         ]);
 
-        DB::table('category')->insert([
+        DB::table('categories')->insert([
             'name' => 'Erva Mate',
 
         ]);
 
-        DB::table('category')->insert([
+        DB::table('categories')->insert([
             'name' => 'Terere',
             'id_category' => 2,
 
         ]);
 
         
-        DB::table('category')->insert([
+        DB::table('categories')->insert([
             'name' => 'Cervejas',
         ]);
 
-        DB::table('category')->insert([
+        DB::table('categories')->insert([
             'name' => 'Artesanais',
             'id_category' => 3,
 

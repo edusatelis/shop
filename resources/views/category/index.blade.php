@@ -3,6 +3,20 @@
 @section('title', 'Categorias')
 
 @section('content')
-    <h1 class="text-center">Categorias</h1>
-    <a href="/categories/create" class="text-center btn btn-danger">Ir para criar</a>
+
+    <div class="row" id="category">
+    @foreach($categories as $category)
+    @if($category->id_category == 0)
+        <div class="card col-md-4 p-4">
+            <img src="/img/bg.jpg">
+            <div class="
+            ">
+                <h5 class="card-title">{{$category->name}}</h5>
+                <a href="#" class="btn btn-primary w-100">Saber Mais</a>
+            </div>
+        </div>
+    @endif()
+    @endforeach()
+    </div>
 @endsection()
+
