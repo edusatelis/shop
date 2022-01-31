@@ -12,7 +12,8 @@ class CategoryController extends Controller
         return view('category.index', ['categories' => $categories]);
     }
 
-    public function create(){
+
+    public function show(){
         return view('category.create');
     }
 }
