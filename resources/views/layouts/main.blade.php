@@ -13,6 +13,26 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-4">
+            <div class="collapse navbar-collapse" id="navbar">
+                <a href="/" class="navbar-brand">
+                    <img src="/img/logo.png" style="width: 100px;" alt="Logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/products" class="nav-link">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gategory" class="nav-link">Categorias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     @yield('content')
 </body>
 
