@@ -1,8 +1,7 @@
-extends('layouts/main');
+@extends('layouts/main')
 
-@section('title', 'Home');
+@section('title', 'HOME')
 
 @section('content')
-
-<h1>Hello World</h1>
+    <h1 class="text-center">Hello World</h1>
 @endsection()
