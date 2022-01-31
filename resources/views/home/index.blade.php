@@ -25,7 +25,7 @@
                            R$ {{$product->price}}
                         </strong>
                     </p>
-                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                    <a href="/products/{{$product->id}}" class="btn btn-primary">Saber Mais</a>
                 </div>
             </div>
             @endforeach()
