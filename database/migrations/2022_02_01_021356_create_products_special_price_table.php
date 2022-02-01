@@ -13,7 +13,7 @@ class CreateProductsSpecialPriceTable extends Migration
      */
     public function up()
     {
-        Schema::create('products_special_price', function (Blueprint $table) {
+        Schema::create('product_special_prices', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_id');
             $table->decimal('price',10,2);
@@ -23,7 +23,7 @@ class CreateProductsSpecialPriceTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('products_special_price', function(Blueprint $table) {
+        Schema::table('product_special_prices', function(Blueprint $table) {
             $table->foreign('product_id')->references('id')->on('products');
         });
     }
@@ -35,6 +35,6 @@ class CreateProductsSpecialPriceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products_special_price');
+        Schema::dropIfExists('product_special_prices');
     }
 }
