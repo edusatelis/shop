@@ -9,6 +9,8 @@ use App\Core\Http\Controllers\CartController;
 
 Route::namespace('\App\Web\Product\Controllers')->group(function (){
     Route::get('/', 'ProductController@index');
+    Route::get('/products/{id}', 'ProductController@show');
+
 });
 
 
