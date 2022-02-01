@@ -22,22 +22,9 @@ class CategorySeeder extends Seeder
             'name' => 'Erva Mate',
 
         ]);
-
-        DB::table('categories')->insert([
-            'name' => 'Terere',
-            'id_category' => 2,
-
-        ]);
-
-        
+    
         DB::table('categories')->insert([
             'name' => 'Cervejas',
-        ]);
-
-        DB::table('categories')->insert([
-            'name' => 'Artesanais',
-            'id_category' => 3,
-
         ]);
     }
 }

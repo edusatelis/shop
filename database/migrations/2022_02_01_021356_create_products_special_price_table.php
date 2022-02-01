@@ -16,6 +16,7 @@ class CreateProductsSpecialPriceTable extends Migration
         Schema::create('products_special_price', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_id');
+            $table->decimal('price',10,2);
             $table->date('date_start');
             $table->date('date_end');
 

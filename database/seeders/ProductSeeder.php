@@ -20,51 +20,39 @@ class ProductSeeder extends Seeder
             'name' => 'Cafe Gourmet',
             'price' => 24.90,
             'qty' => 3,
-            'category_id' => 1,
-            'description' => 'Café arabica tipo 2, ideal para quem gosta de café forte',
-            'image_path' => '/img/jaguari_gourmet.png',
+            'category_id' => 1
         ]);
         DB::table('products')->insert([
             'name' => 'Cafe Extra Forte',
             'price' => 18.90,
             'qty' => 3,
-            'category_id' => 1,
-            'description' => 'Café arabica tipo 1, ideal para quem gosta de café forte',
-            'image_path' => '/img/jaguari_extra_forte.png'
+            'category_id' => 1
         ]);
         DB::table('products')->insert([
             'name' => 'Caixa Erva Mate Tereré Tradicional',
             'price' => 9.90,
             'qty' => 3,
-            'category_id' => 3,
-            'description' => 'Erva raiz, ideal para quem toma com apenas limão na agua',
-            'image_path' => '/img/erva_mate.jpg'
+            'category_id' => 2
         
         ]);
         DB::table('products')->insert([
             'name' => 'Caixa Erva Mate Tereré Menta e Boldo',
             'price' => 15.90,
             'qty' => 3,
-            'category_id' => 3,
-            'description' => 'Erva modinha, caiu no gosto do sul matogrossense',
-            'image_path' => '/img/menta.jpg'
+            'category_id' => 2
       
         ]);
         DB::table('products')->insert([
             'name' => 'Cerveja Colorado Ribeirao Larger',
             'price' => 10.90,
             'qty' => 3,
-            'category_id' => 4,
-            'description' => 'Cerveja Artesanal frutada com leve toque de laranja, assemelha a uma IPA',
-            'image_path' => '/img/Ribeirao-Lager.jpg'
+            'category_id' => 3
         ]);
         DB::table('products')->insert([
             'name' => 'Cerveja Colorado Appia Larger',
             'price' => 12.90,
             'qty' => 3,
-            'category_id' => 4,
-            'description' => 'Cerveja Artesanal com leve toque de mel',
-            'image_path' => '/img/ColoradoAppia.jpg'
+            'category_id' => 3
         ]);
     }
 }
