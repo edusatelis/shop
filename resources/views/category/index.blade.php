@@ -12,7 +12,7 @@
             <div class="
             ">
                 <h5 class="card-title">{{$category->name}}</h5>
-                <a href="#" class="btn btn-primary w-100">Saber Mais</a>
+                <a href="/category/{{$category->id}}" class="btn btn-primary w-100">Saber Mais</a>
             </div>
         </div>
     @endif()

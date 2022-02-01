@@ -16,40 +16,40 @@ class ProductSpecialPriceSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products_special_price')->insert([
+        DB::table('product_special_prices')->insert([
             'product_id' => 1,
             'price' => 15.90,
             'date_start'=> Carbon::now('America/Sao_Paulo')->toDateTimeString(),
             'date_end'=> Carbon::parse(Carbon::now('America/Sao_Paulo'))->addWeeks(1)
         ]);
 
-        DB::table('products_special_price')->insert([
+        DB::table('product_special_prices')->insert([
             'product_id' => 2,
             'price' => 9.90,
             'date_start'=> Carbon::now('America/Sao_Paulo')->toDateTimeString(),
             'date_end'=> Carbon::parse(Carbon::now('America/Sao_Paulo'))->addWeeks(1)
         ]);
 
-        DB::table('products_special_price')->insert([
+        DB::table('product_special_prices')->insert([
             'product_id' => 3,
             'price' => 5.90,
             'date_start'=> Carbon::now('America/Sao_Paulo')->toDateTimeString(),
             'date_end'=> Carbon::parse(Carbon::now('America/Sao_Paulo'))->addWeeks(1)
         ]);
 
-        DB::table('products_special_price')->insert([
+        DB::table('product_special_prices')->insert([
             'product_id' => 4,
             'price' => 10.90,
             'date_start'=> Carbon::now('America/Sao_Paulo')->toDateTimeString(),
             'date_end'=> Carbon::parse(Carbon::now('America/Sao_Paulo'))->addWeeks(1)
         ]);
-        DB::table('products_special_price')->insert([
+        DB::table('product_special_prices')->insert([
             'product_id' => 5,
             'price' => 7.90,
             'date_start'=> Carbon::now('America/Sao_Paulo')->toDateTimeString(),
             'date_end'=> Carbon::parse(Carbon::now('America/Sao_Paulo'))->addWeeks(1)
         ]);
-        DB::table('products_special_price')->insert([
+        DB::table('product_special_prices')->insert([
             'product_id' => 6,
             'price' => 8.90,
             'date_start'=> Carbon::now('America/Sao_Paulo')->toDateTimeString(),
