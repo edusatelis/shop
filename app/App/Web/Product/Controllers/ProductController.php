@@ -50,6 +50,73 @@ class ProductController extends Controller{
 
     }
 
+    public function cart(){
+        $products = app(Product::class)->get();
+        $descriptions = app(ProductDescription::class)->get();
+        $images = app(ProductImage::class)->get();
+        $prices = app(ProductSpecialPrice::class)->get();
+        $date = substr(Carbon::now('America/Sao_Paulo')->toDateTimeString(),0,10);
+
+        foreach($products as $product){
+            foreach($descriptions as $description){
+                
+                foreach($images as $image){
+
+                    foreach($prices as $price){
+            
+                        if($price->date_start == $date && $price->product_id == $product->id ){
+                            $product->price = $price->price;
+                        }
+
+                        if($description->product_id == $product->id ){
+                            $product->description = $description->description;
+                        }
+
+                        if($image->product_id == $product->id ){
+                            $product->image_path = $image->image_path;
+                        }
+                    }
+                }
+            }
+        }
+        return view('cart.index', compact('products'));
+
+    }
+
+    public function home(){
+        $products = app(Product::class)->get();
+        $descriptions = app(ProductDescription::class)->get();
+        $images = app(ProductImage::class)->get();
+        $prices = app(ProductSpecialPrice::class)->get();
+        $date = substr(Carbon::now('America/Sao_Paulo')->toDateTimeString(),0,10);
+
+        foreach($products as $product){
+            foreach($descriptions as $description){
+                
+                foreach($images as $image){
+
+                    foreach($prices as $price){
+            
+                        if($price->date_start == $date && $price->product_id == $product->id ){
+                            $product->price = $price->price;
+                        }
+
+                        if($description->product_id == $product->id ){
+                            $product->description = $description->description;
+                        }
+
+                        if($image->product_id == $product->id ){
+                            $product->image_path = $image->image_path;
+                        }
+                    }
+                }
+            }
+        }
+        return view('home.index', compact('products'));
+
+    }
+
+
     public function store(ProductRequest $request, CreateProductAction $action){
 
         $data = ProductData::fromRequest($request);

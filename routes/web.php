@@ -1,15 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Core\Http\Controllers\CategoryController;
-use App\Core\Http\Controllers\ProductController;
-use App\Core\Http\Controllers\HomeController;
-use App\Core\Http\Controllers\CartController;
 
 
 Route::namespace('\App\Web\Product\Controllers')->group(function (){
-    Route::get('/', 'ProductController@index');
+    Route::get('/', 'ProductController@home');
+    Route::get('/products', 'ProductController@index');
     Route::get('/products/{id}', 'ProductController@show');
+    Route::get('/cart', 'ProductController@cart');
+});
+
+Route::namespace('\App\Web\Category\Controllers')->group(function (){
+    Route::get('/category', 'CategoryController@index');
+    Route::get('/category/{id}', 'CategoryController@show');
 
 });
 
