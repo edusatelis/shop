@@ -13,7 +13,7 @@ class CreateProductsDescriptionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products_descriptions', function (Blueprint $table) {
+        Schema::create('product_descriptions', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_id');
             $table->text('description');
@@ -21,7 +21,7 @@ class CreateProductsDescriptionsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('products_descriptions', function(Blueprint $table) {
+        Schema::table('product_descriptions', function(Blueprint $table) {
             $table->foreign('product_id')->references('id')->on('products');
         });
     }

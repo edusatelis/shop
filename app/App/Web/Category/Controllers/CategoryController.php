@@ -12,6 +12,9 @@ use App\Web\Category\Requests\CategoryRequest;
 class CategoryController extends Controller{
     public function index(){
 
+        $categories = app(Category::class)->get();
+
+        return view('category.index', compact('categories'));
     }
 
     public function store(CategoryRequest $request, CreateCategoryAction $action){

@@ -13,7 +13,7 @@ class CreateProductsImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('products_images', function (Blueprint $table) {
+        Schema::create('product_images', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_id');
             $table->string('image_path');
@@ -21,7 +21,7 @@ class CreateProductsImagesTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('products_images', function(Blueprint $table) {
+        Schema::table('product_images', function(Blueprint $table) {
             $table->foreign('product_id')->references('id')->on('products');
         });
     }
