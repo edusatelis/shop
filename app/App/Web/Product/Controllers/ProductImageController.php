@@ -20,6 +20,6 @@ class ProductImageController extends Controller{
 
         $action($data);
 
-        return back()->with(['success' => 'Categoria Criada com Sucesso!']);
+        return back()->with(['success' => 'Imagem Adicionada com Sucesso!']);
     }
 }
