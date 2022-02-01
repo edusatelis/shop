@@ -2,6 +2,7 @@
 
 namespace Domain\Category\Dtos;
 
+use App\Web\Category\Requests\CategoryRequest;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class CategoryData extends DataTransferObject {
