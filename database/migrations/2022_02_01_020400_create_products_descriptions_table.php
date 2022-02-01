@@ -20,6 +20,10 @@ class CreateProductsDescriptionsTable extends Migration
 
             $table->timestamps();
         });
+
+        Schema::table('products_descriptions', function(Blueprint $table) {
+            $table->foreign('product_id')->references('id')->on('products');
+        });
     }
 
     /**
