@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\CartController;
+use App\Core\Http\Controllers\CategoryController;
+use App\Core\Http\Controllers\ProductController;
+use App\Core\Http\Controllers\HomeController;
+use App\Core\Http\Controllers\CartController;
 
 
 
