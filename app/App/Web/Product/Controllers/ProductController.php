@@ -20,6 +20,6 @@ class ProductController extends Controller{
 
         $action($data);
 
-        return back()->with(['success' => 'Categoria Criada com Sucesso!']);
+        return back()->with(['success' => 'Produto Criado com Sucesso!']);
     }
 }

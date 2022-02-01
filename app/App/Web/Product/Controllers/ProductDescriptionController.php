@@ -20,6 +20,6 @@ class ProductDescriptionController extends Controller{
 
         $action($data);
 
-        return back()->with(['success' => 'Categoria Criada com Sucesso!']);
+        return back()->with(['success' => 'Descrição Criada com Sucesso!']);
     }
 }
